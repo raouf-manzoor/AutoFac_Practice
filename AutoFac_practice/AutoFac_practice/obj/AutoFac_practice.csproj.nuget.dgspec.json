@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\AutoFac_Practice\\AutoFac_practice\\AutoFac_practice\\AutoFac_practice.csproj": {}
+  },
+  "projects": {
+    "D:\\AutoFac_Practice\\AutoFac_practice\\AutoFac_practice\\AutoFac_practice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AutoFac_Practice\\AutoFac_practice\\AutoFac_practice\\AutoFac_practice.csproj",
+        "projectName": "AutoFac_practice",
+        "projectPath": "D:\\AutoFac_Practice\\AutoFac_practice\\AutoFac_practice\\AutoFac_practice.csproj",
+        "packagesPath": "C:\\Users\\raouf.m\\.nuget\\packages\\",
+        "outputPath": "D:\\AutoFac_Practice\\AutoFac_practice\\AutoFac_practice\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\raouf.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
