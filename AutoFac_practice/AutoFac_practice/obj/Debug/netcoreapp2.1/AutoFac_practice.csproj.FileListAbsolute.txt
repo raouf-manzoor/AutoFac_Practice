@@ -1,0 +1,11 @@
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\bin\Debug\netcoreapp2.1\AutoFac_practice.deps.json
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\bin\Debug\netcoreapp2.1\AutoFac_practice.runtimeconfig.json
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\bin\Debug\netcoreapp2.1\AutoFac_practice.runtimeconfig.dev.json
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\bin\Debug\netcoreapp2.1\AutoFac_practice.dll
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\obj\Debug\netcoreapp2.1\AutoFac_practice.csprojAssemblyReference.cache
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\obj\Debug\netcoreapp2.1\AutoFac_practice.csproj.CoreCompileInputs.cache
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\obj\Debug\netcoreapp2.1\AutoFac_practice.AssemblyInfoInputs.cache
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\obj\Debug\netcoreapp2.1\AutoFac_practice.AssemblyInfo.cs
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\bin\Debug\netcoreapp2.1\AutoFac_practice.pdb
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\obj\Debug\netcoreapp2.1\AutoFac_practice.dll
+D:\AutoFac_Practice\AutoFac_practice\AutoFac_practice\obj\Debug\netcoreapp2.1\AutoFac_practice.pdb

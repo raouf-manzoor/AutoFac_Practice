@@ -6,6 +6,7 @@ namespace AutoFac_practice
     {
         static void Main(string[] args)
         {
+            RegistrationConceptsSec1.RegisterDependecies();
             Console.WriteLine("Hello World!");
         }
     }
