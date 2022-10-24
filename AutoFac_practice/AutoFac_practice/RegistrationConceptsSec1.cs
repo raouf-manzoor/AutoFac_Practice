@@ -27,8 +27,7 @@ namespace AutoFac_practice
             builder.RegisterType<ConsoleLog>().As<ILog>();
             builder.RegisterType<Car>();
             builder.RegisterType<Engine>();
-            //builder.RegisterType<ConsoleLog>().As<ILog>();
-            //builder.RegisterType<Car>();
+            
 
             var container = builder.Build();
             container.Resolve<Car>().Go();
