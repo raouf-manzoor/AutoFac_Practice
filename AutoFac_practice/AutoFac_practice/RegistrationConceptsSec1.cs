@@ -24,10 +24,23 @@ namespace AutoFac_practice
 
             // Register all the types which we want to resolve
 
+            // If we registered multiple classes with one interface like the example mentioned below we will get the class refrence which is registerd
+            // at the last. In this case we will get emailLog object.
+            // to prevent overriding default class registration we can use "PreserveExistingDefaults" method.
+
             builder.RegisterType<ConsoleLog>().As<ILog>();
+            builder.RegisterType<EmailLog>().As<ILog>().PreserveExistingDefaults();
+
+            // By default Container we call the constructor which has most arguments. In order to call the constructor of our own choice we have 
+            // to use the UsingConstructor() method which is mentioned below.
+
+            //builder.RegisterType<Car>()
+            //    .UsingConstructor(typeof(Engine));
+
+
             builder.RegisterType<Car>();
             builder.RegisterType<Engine>();
-            
+
 
             var container = builder.Build();
             container.Resolve<Car>().Go();
@@ -52,6 +65,14 @@ namespace AutoFac_practice
         }
     }
 
+    public class EmailLog : ILog
+    {
+        public void Write(string message)
+        {
+            Console.WriteLine("Email Log: " + message);
+        }
+    }
+
     public class Engine
     {
         private ILog log;
@@ -73,6 +94,12 @@ namespace AutoFac_practice
     {
         private Engine engine;
         private ILog log;
+
+        public Car(Engine engine)
+        {
+            this.engine = engine;
+            this.log = new EmailLog(); // assigning it to verify some concepts by default we have registered ConsoleLog
+        }
 
         public Car(Engine engine, ILog log)
         {
