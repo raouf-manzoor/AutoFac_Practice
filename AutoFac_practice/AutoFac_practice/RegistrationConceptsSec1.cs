@@ -37,10 +37,29 @@ namespace AutoFac_practice
             //builder.RegisterType<Car>()
             //    .UsingConstructor(typeof(Engine));
 
+            // If there is a requirement in which you have register Instance of class instead of Type. You have to use RegisterInstance Method I will give
+            // you the instance of that object which you create every time you made a request to get that class refrence as mentioned below
+
+            //. builder.RegisterInstance(new ConsoleLog()).As<ILog>();
 
             builder.RegisterType<Car>();
-            builder.RegisterType<Engine>();
 
+            // Engine class has a constructor with two agruments one is Log and the other one is engineId which is of type Int.
+            // If we registered it the way mentioned below we will get exception because engine class will not be resolved by the container due to 
+            // second argument which is Int.
+
+            //builder.RegisterType<Engine>();
+
+            // To resolve this issue we have to specify the constructor and pass the arguments manually at the time of registration.
+            // IComponentContext contains all the classes which  are registerd with the container.
+
+            builder.Register((IComponentContext c) => new Engine(c.Resolve<ILog>(), 123));
+
+            // Registration of generic components we specity <> as empty due to we are not restricting it to any type
+
+            //builder.RegisterGeneric(typeof(List<>)).As(typeof(IList<>));
+            //var listRefrence = container.Resolve<IList<int>>();
+            //Console.WriteLine(listRefrence.GetType().ToString());
 
             var container = builder.Build();
             container.Resolve<Car>().Go();
@@ -78,10 +97,10 @@ namespace AutoFac_practice
         private ILog log;
         private int id;
 
-        public Engine(ILog log)
+        public Engine(ILog log, int engineId)
         {
             this.log = log;
-            id = new Random().Next();
+            this.id = engineId;
         }
 
         public void Ahead(int power)
