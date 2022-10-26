@@ -37,7 +37,7 @@ namespace AutoFac_practice
             //builder.RegisterType<Car>()
             //    .UsingConstructor(typeof(Engine));
 
-            // If there is a requirement in which you have register Instance of class instead of Type. You have to use RegisterInstance Method I will give
+            // If there is a requirement in which you have register Instance of class instead of Type. You have to use RegisterInstance Method It will give
             // you the instance of that object which you create every time you made a request to get that class refrence as mentioned below
 
             //. builder.RegisterInstance(new ConsoleLog()).As<ILog>();
