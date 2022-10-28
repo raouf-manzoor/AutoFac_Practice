@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoFac_practice_AdvancedRegistrationConcepts;
+using System;
 
 namespace AutoFac_practice
 {
@@ -6,7 +7,8 @@ namespace AutoFac_practice
     {
         static void Main(string[] args)
         {
-            RegistrationConceptsSec1.RegisterDependecies();
+            //RegistrationConceptsSec1.RegisterDependecies();
+            AdvancedRegistrationConcepts.RegisterDependencies();
             Console.WriteLine("Hello World!");
         }
     }
