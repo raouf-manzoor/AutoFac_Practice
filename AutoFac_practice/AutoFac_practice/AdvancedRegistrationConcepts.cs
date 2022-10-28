@@ -55,7 +55,16 @@ namespace AutoFac_practice_AdvancedRegistrationConcepts
 
             logObject.Write("Message to phone number");
 
-            //log.Write("Testing");
+
+            // If we want to pass values at the resolve time. Instead of passing them at the registration time
+            // We can use Register method Overload which receives a Lambda In which we specify at resolve time we want 
+            // this argument to be supplied. for this we have to create NamedParameter object to specify values
+
+
+            //builder.Register((cx, p) => new SMSLog(p.Named<string>("phoneNumber"))).As<ILog>();
+            //var containerRefrence = builder.Build();
+            //var logRefrence= containerRefrence.Resolve<ILog>(new NamedParameter("phoneNumber","2050100"));
+            //logRefrence.Write("Pasing Parameters at resolve time");
         }
 
     }
