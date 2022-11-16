@@ -10,7 +10,8 @@ namespace AutoFac_practice
         {
             //RegistrationConceptsSec1.RegisterDependecies();
             //AdvancedRegistrationConcepts.RegisterDependencies();
-            DelegateFactories.RegisterDependencies();
+            //DelegateFactories.RegisterDependencies();
+            ScanningForTypes.RegisterTypes();
             Console.WriteLine("Hello World!");
         }
     }
