@@ -127,19 +127,19 @@ namespace AutoFac_practice.Section3_Advance_Registration_Concepts_ScanningForMod
         }
     }
 
-    internal class Program
-    {
-        public static void Main(string[] args)
-        {
+    //internal class Program
+    //{
+    //    public static void Main(string[] args)
+    //    {
 
-            // For separation of concerns and we have large amount of classes we split them in modules for easy maintainance
+    //        // For separation of concerns and we have large amount of classes we split them in modules for easy maintainance
 
-            var builder = new ContainerBuilder();
-            builder.RegisterAssemblyModules(typeof(Program).Assembly);
-            //builder.RegisterAssemblyModules<ParentChildModule>(typeof(Program).Assembly);
+    //        var builder = new ContainerBuilder();
+    //        builder.RegisterAssemblyModules(typeof(Program).Assembly);
+    //        //builder.RegisterAssemblyModules<ParentChildModule>(typeof(Program).Assembly);
 
-            var container = builder.Build();
-            Console.WriteLine(container.Resolve<Child>().Parent);
-        }
-    }
+    //        var container = builder.Build();
+    //        Console.WriteLine(container.Resolve<Child>().Parent);
+    //    }
+    //}
 }
